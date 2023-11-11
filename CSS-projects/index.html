@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading style sheets</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <!-- Their are three types of CSS 
+    1.inline css
+    2.internal css
+    3.external css
+-->
+
+<!--inline css -->
+<h4 style="color: red;">This is inline CSS</h4>
+
+<style>
+    /* Internal css */
+h3{
+    color: orange;
+}
+
+</style>
+
+<h3>this is internal css</h3>
+
+
+<!-- this is for external css -->
+<h5>this is external CSS</h5>
+<!-- for big project buliding we are using external css -->
+
+
+
+
+
+<!--css selectors 
+Tag selector
+ id selector 
+class selector
+universal selector-->
+
+<!-- Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value) -->
+
+<!-- tag selrctor -->
+
+<h4>this is the tag selector which is not used mainly because when we have to use many tags or same tag at that time
+    thier is disadvantage that it will not work properly
+</h4>
+
+<!-- id selector -->
+<!-- The CSS id Selector
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element. -->
+<!-- In Simple words when we have to give any unquie work to a worker of departments at that time we have to use id selector  -->
+
+<h1 id="dep_1">here the head of dep one will do the only work of backend</h1>
+<h1 id="dep_2">here the head of dep two will do the only work of backend</h1>
+<h1 id="dep_3">here the head of dep three will do the only work of backend</h1>
+
+<style>
+    #dep_1
+    {
+        color: orange;
+    }
+    #dep_2
+        {
+        color: rgb(232, 242, 253);
+    }
+    #dep_3
+    {
+        color: rgb(4, 255, 0);
+    }
+</style>
+
+
+<!-- class selector  -->
+<!-- The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the class name. -->
+<!-- in simple words when we have to give same work for different works at that time we have to use class selector  -->
+<!-- class can be used single or multiply -->
+<h6 class="worker">will do the work of frontend</h6>
+<h6 class="worker">will do the work of frontend</h6>
+<h6 class="worker">will do the work of frontend</h6>
+
+<style>
+    .worker
+    {
+        color: red;
+    }
+</style>
+
+
+
+</body>
+</html>
