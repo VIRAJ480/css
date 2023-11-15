@@ -182,22 +182,114 @@ you can uncomment and see that element -->
 <br>
 <br>
 
+
+<!-- Display and visibility property -->
+
+<!-- display property
+display inline
+display block
+display none
+-->
+
+
+<!-- Inline element
+full width
+full height
+but start with next line -->
+
+<!-- block element
+no FULL width
+no full height
+but start with same line -->
+
+<!-- display none -->
+<!-- Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there: -->
+
+<!-- visibility:hidden; also hides an element. -->
+
+<!-- However, the element will still take up the same space as before. The element will be hidden, but still affect the layout: -->
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- This is text shadow-->
+
 <style>
-    .hidden {
-      display: none;
+#shadow
+{
+    text-shadow: 2px 2px  blue;
+}
+</style>
+
+
+<h1 id="shadow">This is the shadow of text </h1>
+
+<!-- this is mainly text-Shadow:A B color
+here the a is horizoontal shadow and B is the vertical shadow and last color is the any color for the shadow -->
+
+<br>
+<br>
+<!-- if you have to blur the text then do this -->
+
+<style>
+    #blur
+    {
+        text-shadow: 2px 2px 5px red;
     }
-    </style>
-    </head>
-    <body>
-    
-    <h1>This is a visible heading</h1>
-    <h1 class="hidden">This is a hidden heading</h1>
-    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+</style>
+
+<!-- this is mainly text-Shadow:A B c color
+here their A is horizontal shadow B is the vertical shadow ,C is the used for making the text blur and last shadow color of text -->
 
 
+<h3 id="blur">this is the blur text </h3>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
+<!-- This is the box shadow property -->
 
+<!-- here for the box shadow  have the properties same as the properties of text shadow A B C COLOR of shadow  -->
+<style>
+
+    .box
+    {
+        background-color: orange;
+        width: 200px;
+        height: 100px;
+        box-shadow: 10px 10px 5px lightblue ;
+        padding: 10px;
+    }
+</style>
+<div class="box ">This is the text inside the box</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--here the extra property is of inset which is infront of you here  -->
+<style>
+
+    .inset
+    {
+        background-color: orange;
+        width: 200px;
+        height: 100px;
+        box-shadow: 10px 10px 5px lightblue  inset;
+        padding: 10px;
+    }
+</style>
+<div class="inset ">This is the text inside the box</div>
+
+<!-- Set the inset Parameter
+The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow. -->
 
 
 </body>
