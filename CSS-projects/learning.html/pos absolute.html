@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- position absolute=first it finds that wheather his parent is positioned or not and if parent says then 
+        it sets itself relative to the parent ... -->
+       <!-- so here you can uncomment the property and see the things very clearly how the box1 is overlapping the parent because 
+    parent is not having any position so it is overlapping with the web page-->
+
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+            }
+.parent
+{
+    border: 2px solid red;
+    padding: 3px ;
+    margin: 30px;
+    /* position: absolute; */
+}
+
+.box1
+{
+    border: 2px solid purple;
+    border-color: orange;
+    width: 200px;
+    height: 100px;
+    margin: 2px;
+position: absolute;
+top: 3px;
+}
+.box2
+{
+    border: 2px solid rgb(0, 102, 128);
+    width: 200px;
+    height: 100px;
+    margin: 2px;
+
+}
+
+.box3
+{
+    border: 2px solid rgb(0, 128, 9);
+    width: 200px;
+    height: 100px;
+    margin: 2px;
+
+}
+
+
+        </style>
+
+
+<div class="parent">
+    <div class="box1 "></div>
+    <div class="box2 "></div>
+    <div class="box3 "></div>
+</div>
+</body>
+</html>
