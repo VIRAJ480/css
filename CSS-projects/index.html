@@ -103,19 +103,152 @@ To select elements with a specific class, write a period (.) character, followed
     }
 </style>
 
+<br><br>
+<br>
+
+<!-- combinator selector  -->
+<!-- the above example is of child combinator selector -->
+
+<div class="parent">
+
+<h5>this is the comnbinator Selector</h5>
+
+</div>
+
+<style>
+    .parent
+    {
+        border: orange 2px solid;
+    }
+
+    .parent > h5{
+        color: blueviolet;
+    }
+</style>
+
+<br>
+<br>
+
+<!-- font size -->
+
+<h1 id="font">this is the font size</h1>
+<style>
+    #font
+    {
+        color: orange;
+     font-size: larger;
+    }
+</style>
+
+<br><br>
+<!-- font-family -->
+
+<!-- you can use font family from google as well]
+just search Google Fonts
+just copy the link->
+ -->
+<!-- font-weight you can use this and see it -->
+<!-- font-style you can use ut -->
+
+<br>
+<br>
+
+<style>
+#back
+{
+background-image: linear-gradient(red,blueviolet,orange,yellow);
+/* with the help of this linear gradient the colors are added from downside to upside */
+}
+</style>
+
+<p id="back">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nobis alias laborum in. Nam ipsa minus fugit veritatis qui amet quis nisi rem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum earum ducimus nam saepe. Deserunt officia placeat quis aspernatur saepe a quas perferendis maxime at consequatur blanditiis quam quisquam cupiditate nesciunt facere exercitationem, enim necessitatibus vel harum. Vitae ut totam minima dolorum vel provident autem veniam tenetur eaque voluptatibus ducimus, debitis officiis qui ratione optio mollitia dolores quam! Accusamus eligendi vitae delectus possimus. Porro odit hic est sed excepturi consectetur cum quisquam ratione, impedit id nam voluptas, cupiditate esse quod sapiente quasi aperiam! Ducimus tempore odio quod quis suscipit quo velit, eos iste! Repellendus ipsa iusto eos qui consectetur totam magnam?</p>
 
 
+<br><br>
+<br>
+
+<!-- what is padding ,border,margin,content -->
+<!-- this the simple way to make that i had explanied this concepts  -->
+
+<style>
+.mar
+{
+    border: 2px solid red;
+    /* text-align: center; */
+    height: 200px;
+    width: 300px;
+}
+.bor
+{
+    border: 2px solid rgb(0, 0, 0);  
+    /* text-align: center; */
+    height: 195px;
+    width: 295px;
+    margin: 10px;
+}
+.pad
+{
+    border: 2px solid rgb(2, 48, 255);
+    /* text-align: center; */
+    height: 185px;
+    width: 285px;
+    margin: 10px;
+}
+.cont
+{
+    border: 2px solid rgb(2, 255, 74);
+    /* text-align: center; */
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+}
+</style>
 
 
+<div class="mar">margin
+    <div class="bor">border
+<div class="pad">padding
+<div class="cont">Content
+
+</div>
+
+</div>
+    </div>
+</div>
 
 
+<br>
+<br>
 
+<!-- block level element 
+the elements with
+full widht
+full height
+but starts from next line-->
 
+<!-- inline element
+ the elements with
+ NO full widht
+ NO full height
+but starts from next same line -->
 
+<!-- inline block element
+In this case we can make any element as inline to block or block to inline let see -->
 
+<br><br>
+<br>
+<a href="">this is the inline level  element </a>
+<style>
+    a{
+        border: 2px solid orange;
+        display: block;
+    /* so here using display property you can make block to inline or vise versa */
+    }
+</style>
 
-
-
+<br>
+<br>
+<!-- Div it is the empty box -->
 
 </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .parent
+    {
+        border: 2px solid red;
+        margin: 10px;
+        background-image: url(https://eskipaper.com/images/pink-rose-background-1.jpg);
+        /* background-repeat: no-repeat; */
+    }
+    .child
+    {
+        border: 3px solid rgb(255, 255, 255);
+        margin: 240px;
+        background-color: white;
+        border-radius: 10px;
+     
+    
+    }
+.child > h1
+{
+    text-align: center;
+}
+form
+{
+    /* border: 2px solid red; */
+  padding-left: 40px;
+}
+input
+{
+    margin: 5px;
+
+    width: 900px;
+}
+form > label{
+    color: rgb(145, 144, 144);
+}
+button
+{
+    /* text-align: center;
+     */
+     border: 3px solid red;
+     margin-left: 350px;
+     padding: 10px;
+    background-image:linear-gradient(rgb(212, 32, 140),rgb(230, 184, 99));
+}
+
+</style>
+<body>
+    <!-- this is the form -->
+    <div class="parent">
+        <div class="child">
+            <h1 id="Contact">Contact Us</h1>
+            <form action="">
+                <label for="">Name</label><br>
+                <input type="text">
+                <br>
+                <br>
+                <label for="">Email</label><br>
+                <input type="email">
+                <br>
+                <br>
+                <label for="">Message</label><br>
+                <textarea name="" id="" cols="120" rows="5"></textarea>
+                <br>
+                <br>
+                
+                <button>Send Your Message</button>
+                <br>
+                <br>
+                <br>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
